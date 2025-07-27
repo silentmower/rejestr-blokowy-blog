@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "Chicago", system-ui, sans-serif;
+  background-color: #87ceeb;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: #be4bdb;
+  z-index: -1;
+}
+
+header {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  background: transparent;
+}
+
+#graffiti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#graffiti img {
+  max-width: 90%;
+  max-height: 100%;
+  display: block;
+}
+
+.music-player {
+  width: 40%;
+  height: 30vh;
+  margin: 50px auto;
+  border: 2px solid #000;
+  background: #fff;
+  box-shadow: 5px 5px 0px #000;
+}
+
+.window-header {
+  background: #cfcfcf;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.window-header .buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.window-header .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.btn.red {
+  background: red;
+}
+.btn.yellow {
+  background: yellow;
+}
+.btn.green {
+  background: limegreen;
+}
+
+.window-body {
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .music-player {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  header {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background: transparent;
+  }
+  
+  #graffiti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #graffiti img {
+    max-width: 80%;
+    max-height: 100%;
+    display: block;
+  }
+}
